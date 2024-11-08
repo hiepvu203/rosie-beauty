@@ -1,0 +1,39 @@
+.brand-section {
+    max-width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+.brand-section h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.brand-slider-container {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent line wrapping */
+    padding-bottom: 10px; /* Add some space for scroll bar */
+}
+
+.brand-slider {
+    display: inline-flex;
+    gap: 20px;
+}
+
+.brand-item {
+    min-width: 150px; /* Adjust based on logo size */
+    height: 100px;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.brand-item img {
+    max-width: 100%;
+    max-height: 80%;
+    object-fit: contain;
+}

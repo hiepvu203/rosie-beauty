@@ -1,0 +1,45 @@
+.service-container {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #FFF5F5;
+}
+
+.product-showcase {
+    margin-left: 50px;
+}
+
+.service-features {
+    width: 30%;
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    background-color: #FFECE1;
+    margin-bottom: 20px;
+}
+
+.feature-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    padding: 15px;
+}
+
+.feature-text h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 5px;
+    
+}
+
+.feature-text p {
+    font-size: 0.9em;
+    color: #666;
+}

@@ -1,0 +1,112 @@
+#header {
+    height: 52px; 
+    border-bottom: solid 1px #e5e5e5;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+li {
+    list-style-type: none;
+}
+
+#left-header {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    margin-left: 40px;
+    margin-right: 20px;
+}
+
+#center-header, .subnav {
+    list-style-type: none;
+}
+
+#center-header {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 50px;
+    padding: 0;
+}
+
+#center-header > li {
+    position: relative;
+    margin: 0 20px;
+}
+
+#center-header li a, .subnav-two li a, .btn-logout {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: #333;
+    font-weight: 400;
+    font-size: 17px;
+    display: block;
+    padding: 10px 0;
+}
+
+#center-header li:hover > a {
+    color: #d4a373; /* Màu nâu nhạt khi hover */
+}
+
+.subnav {
+    display: none;
+    position: absolute;
+    top: 100%; /* Đảm bảo subnav hiện ngay dưới mục cha */
+    left: 0;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1111;
+    padding: 0;
+}
+
+.btn-logout {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+#center-header li:hover .subnav {
+    display: block;
+}
+
+.subnav li, .subnav-two li {
+    padding-left: 10px;
+}
+
+.subnav li:hover, .subnav-two li:hover {
+    background-color: #FF8247;
+    color: black;
+}
+
+.subnav li a, .subnav-two li a {
+    color: #333;
+}
+
+.nav-arrow-down {
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+#right-header {
+    margin-left: 40px;
+    display: flex;
+}
+
+.subnav-two {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1111;
+    padding: 0;
+}
+
+.account-icon:hover .subnav-two {
+    display: block;
+}
+
+.icon-user {
+    width: 30px;
+    height: 30px;
+}

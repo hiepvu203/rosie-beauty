@@ -1,0 +1,28 @@
+- Những vấn đề chưa được giải quyết:
+ 1. manage-brands : chưa hoàn thành phần update
+    + Khi update brand, không update được logo
+        // Lấy logo cũ từ cơ sở dữ liệu
+        $stmt = $conn->prepare("SELECT logo_url FROM brands WHERE brand_id = ?");
+        $stmt->bind_param("i", $brand_id);
+        $stmt->execute();
+        $stmt->bind_result($old_logo);
+        $stmt->fetch();
+        $stmt->close();
+
+        // Xóa logo cũ nếu nó tồn tại
+        if (file_exists($old_logo)) {
+            unlink($old_logo); // Xóa file logo cũ
+        }else{
+            echo "Không tồn tại file logo cũ";
+            exit();
+        }   
+    + Trường hợp chỉ update brand_name, không update logo
+ 2. Phần đăng ký
+    + Vẫn chưa làm được kiểu thông báo luôn lỗi là username hay email đã tồn tại
+
+ 3. Phần header
+    + Khi hover vào icon user hiển thị dropdown menu, trong dropdown menu đó có các chức năng là 
+      vào trang detail account và đăng xuất
+    
+ 4. Update thêm phần upload file
+    + Chia ra các thư mục con ví dụ như upload ảnh cho sản phẩm, ảnh cho brand, ảnh cho user
