@@ -3,32 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        /* body {
-            max-width: 100%;
-        } */
-    </style>
+    <link rel="shortcut icon" href="app/assets/img/Logo/favicon38f3.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <link rel="stylesheet" href="app/assets/css/base.css">
 </head>
-<body>
+<body> 
     <?php
         include_once 'config/constant.php'; 
         include_once 'config/database.php';
-        include_once 'app/inc/slideshow.php';
         include_once 'app/inc/header.php'; 
+        include_once 'app/routes.php';
+        include_once 'app/inc/footer.php';
     ?>
-    <div class="center">
-        <?php
-            include_once 'app/inc/service.php';
-            include_once 'app/inc/promotion.php';
-            //include_once 'app/inc/product_temp.php';
-            include_once 'app/inc/temp_2.php';
-            include_once 'app/inc/products.php';
-            include_once 'app/inc/banner_content.php';
-            include_once 'app/inc/blogs.php';
-            include_once 'app/inc/brands.php';
-            include_once 'app/inc/footer.php';
-        ?>
-    </div>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"></script>
 </html>
