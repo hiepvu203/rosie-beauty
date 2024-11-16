@@ -23,11 +23,12 @@
             // Kiểm tra xem username hay email đã tồn tại
             $user = $checkResult->fetch_assoc();
             if ($user['username'] === $username) {
-                header("Location: ../pages/account.php?error=Tên người dùng đã tồn tại");
+                header("Location: ../../?action=account&error=Tên người dùng đã tồn tại");
+                exit();
             } elseif ($user['email'] === $email) {
-                header("Location: ../pages/account.php?error=Email đã được sử dụng");
+                header("Location: ../../?action=account&error=Email đã được sử dụng");
+                exit();
             }
-            exit();
         }else{
             $stmt = $conn->prepare("INSERT INTO user (username, email, password) VALUES (?, ?, ?)");
             if ($stmt === false) {
@@ -80,12 +81,13 @@
             echo $_SESSION['username'];
             if ($user['role'] == 1) {
                 header("Location: ../../admin/index_admin.php"); // Chuyển đến trang admin
+                exit();
             } else {
                 header("Location: ../../"); 
+                exit();
             }
-            exit();
         }else{
-            header("Location: ../pages/account.php?error-login=Tên đăng nhập hoặc mật khẩu không đúng");
+            header("Location: ../../?action=account&error-login=Tên đăng nhập hoặc mật khẩu không đúng");
         }
         $stmt2->close();
     }
