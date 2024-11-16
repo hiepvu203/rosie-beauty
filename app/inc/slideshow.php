@@ -2,8 +2,8 @@
 
 <?php
     function renderSlider($slides) {
-        $output = '<div class="slider-container">';
-        $output .= '<div class="slider">';
+        $output = '<div class="slider-container max-width">';
+        $output .= '<div class="slider flex">';
 
         foreach ($slides as $index => $slide){
             $output .= '<div class="slide">';
@@ -12,8 +12,8 @@
         }
 
         $output .= '</div>';
-        $output .= '<button class="prev-btn">&#10094;</button>';
-        $output .= '<button class="next-btn">&#10095;</button>';
+        $output .= '<button class="prev-btn l-10 border-radius-10 p-10">&#10094;</button>';
+        $output .= '<button class="next-btn r-10 border-radius-10 p-10">&#10095;</button>';
         $output .= '</div>';
         return $output;
     }
