@@ -6,13 +6,13 @@
 
 <link rel="stylesheet" href="app/assets/css/brand_inc.css">
 
-<div class="brand-section">
-    <h2>Thương hiệu nổi bật</h2>
+<div class="brand-section max-width text-center p-20">
+    <h2 class="f-24 mb-10">Thương hiệu nổi bật</h2>
     <div class="brand-slider-container">
         <div class="brand-slider">
             <?php while ($brand = $result->fetch_assoc()) { ?>
-                <div class="brand-item">
-                    <img src="<?php echo str_replace('../..', 'admin', $brand['logo_url']); ?>" alt="<?php echo $brand['name']; ?>">
+                <div class="brand-item flex flex-center border-radius-10">
+                    <img class="max-width" src="<?php echo str_replace('../..', 'admin', $brand['logo_url']); ?>" alt="<?php echo $brand['name']; ?>">
                 </div>
             <?php } ?>
         </div>
