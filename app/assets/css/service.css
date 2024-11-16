@@ -1,8 +1,5 @@
 .service-container {
-    max-width: 100%;
-    display: flex;
     justify-content: space-between;
-    padding: 20px;
     background-color: #FFF5F5;
 }
 
@@ -13,16 +10,12 @@
 .service-features {
     width: 30%;
     background-color: #FFF;
-    padding: 20px;
-    border-radius: 10px;
-    font-family: 'Roboto', sans-serif;
 }
-
+    
 .feature {
-    display: flex;
     align-items: center;
     background-color: #FFECE1;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .feature-icon {
@@ -36,7 +29,6 @@
     font-size: 1.2em;
     color: #333;
     margin-bottom: 5px;
-    
 }
 
 .feature-text p {
